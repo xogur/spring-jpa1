@@ -3,6 +3,7 @@ package com.jpabook.jpashop.controller;
 
 import com.jpabook.jpashop.domain.Address;
 import com.jpabook.jpashop.domain.Member;
+import com.jpabook.jpashop.domain.item.Item;
 import com.jpabook.jpashop.service.MemberService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -50,4 +51,5 @@ public class MemberController {
         model.addAttribute("members", members);
         return "members/memberList";
     }
+
 }
